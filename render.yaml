@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: atmotrust-api
+    runtime: python
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: uvicorn app.main:app --app-dir backend --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: ATMOTRUST_ENV
+        value: hosted
+      - key: ATMOTRUST_LIVE_PROVIDER
+        value: open_meteo
+      - key: ATMOTRUST_ALLOWED_ORIGINS
+        sync: false
