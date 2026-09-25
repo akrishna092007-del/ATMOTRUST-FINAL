@@ -3,8 +3,8 @@ import type { User } from './types'
 
 const API = (import.meta.env.VITE_API_BASE_URL || '').replace(/\/$/, '')
 const demoCredentials = {
-  authority: { username: 'authority', password: 'vH3z-6bUCpM2045E_9QmeQ3b' },
-  employee: { username: 'employee', password: 'TmarU5EnllNDsqe-lzujz7XL' },
+  authority: { username: 'authority', password: 'authority' },
+  employee: { username: 'employee', password: 'employee' },
 } as const
 
 export function Landing({ navigate }: { navigate: (path: string) => void }) {

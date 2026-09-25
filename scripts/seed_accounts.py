@@ -10,8 +10,8 @@ from app.data import PreparedSource
 from app.operations import Operations
 
 DEMO_PASSWORDS = {
-    "authority": "vH3z-6bUCpM2045E_9QmeQ3b",
-    "employee": "TmarU5EnllNDsqe-lzujz7XL",
+    "authority": "authority",
+    "employee": "employee",
 }
 
 
